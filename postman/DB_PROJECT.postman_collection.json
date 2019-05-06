@@ -1,0 +1,184 @@
+{
+	"info": {
+		"name": "DB_PROJECT",
+		"_postman_id": "46fda91d-97ff-6e63-6fec-6901c6a2386b",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"email\":\"adipiscing.Mauris@egetmassa.co.uk\",\"password\":\"PSQ90RMR5YH\"}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"login"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "create ride",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\":\"test\",\n\t\"fname\": \"Andrew\",\n\t\"lname\": \"Schlesinger\",\n\t\"cell\": \"919-630-0307\",\n\t\"startLoc\": \"Fretwell\",\n\t\"endLoc\": \"Friday\",\n\t\"startTime\": 0\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/createRide",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"createRide"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "create user",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\":\"test\",\n\t\"password\":\"1234\",\n\t\"fname\": \"Andrew\",\n\t\"lname\": \"Schlesinger\",\n\t\"cell\": \"919-630-0307\",\n\t\"deptName\": \"Accounting\",\n\t\"fullTime\": \"Y\",\n\t\"position\": \"\",\n\t\"gradYear\": \"2020\",\n\t\"birthday\": 0,\n\t\"admin\": \"N\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/createUser",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"createUser"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "find user ride",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\":\"test\",\n\t\"password\":\"1234\",\n\t\"fname\": \"Andrew\",\n\t\"lname\": \"Schlesinger\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/findUserRide",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"findUserRide"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "delete ride",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\": 7,\n\t\"email\":\"test\",\n\t\"password\":\"1234\",\n\t\"fname\": \"Andrew\",\n\t\"lname\": \"Schlesinger\",\n\t\"startLoc\": \"Fretwell\",\n\t\"endLoc\": \"Friday\",\n\t\"startTime\": 0\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/deleteRide",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"deleteRide"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "locations",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"email\":\"adipiscing.Mauris@egetmassa.co.uk\",\"password\":\"PSQ90RMR5YH\"}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/locations",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"locations"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
