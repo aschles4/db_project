@@ -47,7 +47,7 @@ import VueAxios from 'vue-axios'
  
 Vue.use(VueAxios, axios)
 
-var createRideURL = 'http://api:3000/createRide'
+var createRideURL = 'http://localhost:3000/createRide'
 
 export default {
   data () {
@@ -65,7 +65,7 @@ export default {
   computed: {
     getLoc: function () {
       // `this` points to the vm instance
-       this.axios.get('http://api:3000/locations').then(response => {
+       this.axios.get('http://localhost:3000/locations').then(response => {
         console.log(response)
         this.locations = response.data.loc
        })

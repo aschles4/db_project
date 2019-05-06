@@ -21,7 +21,7 @@ import axios from 'axios'
 import VueAxios from 'vue-axios'
  
 Vue.use(VueAxios, axios)
-var loginURL = 'http://api:3000/login'
+var loginURL = 'http://localhost:3000/login'
 
 export default {
   data () {

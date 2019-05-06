@@ -63,7 +63,7 @@ import VueAxios from 'vue-axios'
  
 Vue.use(VueAxios, axios)
 
-var registerURL = 'http://api:3000/createUser'
+var registerURL = 'http://localhost:3000/createUser'
 
 export default {
   data () {
